@@ -76,7 +76,6 @@
 //if (something.isArray()) // Correto
 //// ou
 //if (something is Array<*>) // Correto
-
 package academy.learnprogramming.datatypes
 
 import academy.learnprogramming.javacode.DummyClass
@@ -130,4 +129,9 @@ fun main(args: Array<String>) {
     DummyClass().printNumbers(evenNumbers.toIntArray())
 
     val convertedIntArray = myIntArray.toTypedArray()
+
+    // Adicionando a chamada do método isVacationTime
+    val vacationTime = true // ou false
+    val onVacationMessage = DummyClass().isVacationTime(vacationTime)
+    println(onVacationMessage) // Exibe: "I'm on vacation!" ou "I'm working"
 }
